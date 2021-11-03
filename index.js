@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const Dishes = require("./models/dishes");
 
-const url = "mongodb://localhost:27017/conFusion";
+const url = "mongodb://localhost:27017/conFusion2";
 const connect = mongoose.connect(url);
 
 connect.then((db) => {
@@ -67,7 +67,7 @@ connect.then((db) => {
 //     .then((dishes) => {
 //       console.log(dishes);
 
-//       return Dishes.remove({}).exec();
+//       return Dishes.deleteOne({});
 //     })
 //     .then(() => {
 //       return mongoose.connection.close();
